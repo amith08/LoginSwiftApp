@@ -1,5 +1,5 @@
 //
-//  DataSeeder.swift
+//  PutData.swift
 //  LoginWithClock
 //
 //  Created by Amith on 22/01/25.
