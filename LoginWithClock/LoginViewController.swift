@@ -30,8 +30,12 @@ class LoginViewController: UIViewController {
 
     @IBAction func loginButtonTapped(_ sender: UIButton) {
         guard let username = usernameTextField.text, !username.isEmpty,
-              let password = passwordTextField.text, !password.isEmpty else { return }
-    
+              let password = passwordTextField.text, !password.isEmpty else { 
+            let alert = UIAlertController(title: "Input Error",message: "Please enter username and password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            return
+        }
         if authenticateUser(username: username, password: password){
             UserDefaults.standard.set(true, forKey: "isLoggedIn")
             UserDefaults.standard.synchronize()

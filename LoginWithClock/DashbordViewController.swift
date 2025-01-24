@@ -44,7 +44,7 @@ class DashbordViewController: UIViewController {
             return "Good Morning"
         case 12..<16:
             return "Good Afternoon"
-        case 17..<22:
+        case 16..<22:
             return "Good Evening"
         default:
             return "Good Night"

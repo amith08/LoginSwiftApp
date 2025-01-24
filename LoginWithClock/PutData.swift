@@ -9,8 +9,8 @@ import Foundation
 import CoreData
 import UIKit
 
-class DataSeeder{
-    static func seedUsers(){
+class PutData{
+    static func PutUsers(){
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let fetchRequest: NSFetchRequest<User> = User.fetchRequest()
